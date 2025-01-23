@@ -11,7 +11,6 @@ let isCopied = false;
 fsp.readdir(__dirname, {withFileTypes: true})
   .then((arr) => {
     arr.forEach(function (elem) {
-      console.log(elem);
       if(elem.isDirectory && elem.name == "files-copy") {
         fs.rm(filesCopyPath, {recursive: true, force: true}, () => {
           copyDir();
