@@ -6,5 +6,5 @@ const { stdout } = require("process");
 const text = fs.createReadStream(path.join(__dirname, "text.txt"));
 
 text.on("data", (data) => {
-	stdout.write(data);
+  stdout.write(data);
 });
