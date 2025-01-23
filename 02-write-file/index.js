@@ -1,11 +1,7 @@
 
 const fs = require("fs");
-const path = require("path");
 const process = require("process");
 const readline = require("readline");
-
-const events = require("events");
-const eventEmitter = new events.EventEmitter();
 
 const stdout = process.stdout;
 const stdin = process.stdin;
