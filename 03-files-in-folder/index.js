@@ -1,9 +1,7 @@
 
-const fs = require("fs");
 const fsp = require("fs/promises");
 const path = require("path");
 const { stdout } = require("process");
-const readline = require("readline");
 
 let names = [];
 let exts = [];
