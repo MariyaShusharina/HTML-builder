@@ -21,6 +21,9 @@ fsp.readdir(stylesPath, {withFileTypes: true})
       paths.push(p);
       exts.push(path.extname(p));
     });
+
+    fs.writeFile(distPath, "", (err) => {});
+    
     writing();
   });
 
